@@ -36,7 +36,7 @@ use Test::More tests => 28;
     is($test1->quux, 'quux', 'Attribute set with aliased writer');
 
     my $test2 = MyTest->new(bar => 'foo', baz => 'baz');
-    is($test2->foo, 'foo', 'Attribute set wtih aliased init_arg');
+    is($test2->foo, 'foo', 'Attribute set with aliased init_arg');
     is($test2->baz, undef, 'Attribute set with default init_arg (undef)');
 
     $test2->baz('baz');
